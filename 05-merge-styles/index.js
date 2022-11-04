@@ -24,7 +24,6 @@ async function createBundle() {
   })
 
   let styleArr = await Promise.all(promiseArr);
-  console.log(styleArr);
 
   const projectDistFiles = await readdir(path.join(__dirname, 'project-dist'));
 
