@@ -11,7 +11,7 @@ const show = async function (pathToFile) {
         let [name, ext] = file.name.split('.');
         fs.stat(
           path.join(pathToFile, file.name),
-          (err, stats) => console.log(`${name} - ${ext} - ${stats.size / 8000}Kb`));
+          (err, stats) => console.log(`${name} - ${ext} - ${stats.size / 1024}Kb`));
       }
   } catch (err) {
     console.error(err);
